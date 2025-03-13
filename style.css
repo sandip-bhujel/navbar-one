@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite IT Moderna";
+  font-family: "Josefin Sans", sans-serif;
+  /* border: 0.1rem solid black; */
+}
+
+:root {
+  --maroon-clr: rgb(56, 17, 17);
+  --saffaron: #f5c332;
+  --dark-blue-clr: #714fa5;
+  --serene-clr: #497300;
+  --serene-clr: #b22222;
+}
+.nav-link {
+  color: #b22222;
+  font-size: 1rem;
+}
+.navbar {
+  background: rgba(255, 255 255 0.9);
+  height: 9rem;
+  border-width: 0.63rem 0 0.63rem 0;
+}
+.nav-item {
+  padding-inline: 1.5rem;
+}
+.nav-link:hover {
+  color: #497300;
+}
+/* bag and dot icon style start here*/
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.nav-icon-right a {
+  font-size: 1.2rem;
+  padding-inline: 0.5rem;
+  color: #b22222;
+}
+.nav-icon-right a :hover {
+  color: #497300;
+}
+/* icon style end here */
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 2rem;
+    margin-top: 5.6rem;
+    z-index: 1000;
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block !important;
+  }
+}
